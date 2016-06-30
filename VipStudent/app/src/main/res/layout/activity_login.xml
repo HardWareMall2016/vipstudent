@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="38dp"
+        android:src="@mipmap/logo" />
+
+    <EditText
+        android:id="@+id/student_number"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/bg_white_rounded_with_border_selector"
+        android:gravity="center_vertical"
+        android:hint="@string/login_input_student_no"
+        android:inputType="number"
+        android:minHeight="@dimen/min_item_height"
+        android:paddingLeft="16dp"
+        android:singleLine="true"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_white_rounded_with_border_selector"
+        android:gravity="center_vertical"
+        android:hint="@string/login_input_pwd"
+        android:inputType="textPassword"
+        android:minHeight="@dimen/min_item_height"
+        android:paddingLeft="16dp"
+        android:singleLine="true"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/text_white_bg_blue_btn_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/login_title" />
+
+</LinearLayout>

@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vip="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/teacher_appraise_data"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="2015-12-01"
+                        android:textColor="#494949"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/teacher_appraise_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/layout_marginleft"
+                        android:layout_marginTop="20dp"
+                        android:layout_toRightOf="@+id/teacher_appraise_data"
+                        android:text="10:00-11:30"
+                        android:textColor="@color/text_color_content"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_ll"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="课程："
+                            android:textColor="@color/text_color_content"
+                            android:textSize="@dimen/text_size_large" />
+
+                        <TextView
+                            android:id="@+id/teacher_appraise_lesson"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="雅思听力"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/text_size_large" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="@dimen/layout_marginleft"
+                        android:layout_toRightOf="@+id/ll_ll"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="教师："
+                            android:textColor="@color/text_color_content"
+                            android:textSize="@dimen/text_size_large" />
+
+                        <TextView
+                            android:id="@+id/teacher_appraise_teacher"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="June zhou"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/text_size_large" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:divider="?android:attr/listDivider"
+                    android:orientation="vertical"
+                    android:showDividers="middle">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp">
+
+                            <TextView
+                                android:id="@+id/shifou"
+                                android:layout_width="180dp"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:text="课程是否正常上完"
+                                android:textColor="@color/text_color_content"
+                                android:textSize="14dp" />
+
+                            <RadioGroup
+                                android:id="@+id/radioGroup_yes_no"
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:layout_toRightOf="@+id/shifou"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/teacher_appraise_yes"
+                                    style="@style/RadioButtonStyles"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:checked="true"
+                                    android:paddingLeft="10dp"
+                                    android:text="是"
+                                    android:textColor="@color/text_color_content"
+                                    android:textSize="@dimen/text_size_large" />
+
+                                <RadioButton
+                                    android:id="@+id/teacher_appraise_no"
+                                    style="@style/RadioButtonStyles"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="40dp"
+                                    android:background="@null"
+                                    android:checked="false"
+                                    android:paddingLeft="10dp"
+                                    android:text="否"
+                                    android:textColor="@color/text_color_content"
+                                    android:textSize="@dimen/text_size_large" />
+                            </RadioGroup>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/teacher_appraise_no_reson"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <RadioGroup
+                            android:id="@+id/radioGroup_no"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:paddingTop="20dp">
+
+                            <RadioButton
+                                android:id="@+id/reason_late"
+                                style="@style/RadioButtonStyles"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:background="@null"
+                                android:checked="false"
+                                android:paddingLeft="10dp"
+                                android:text="老师迟到/早退"
+                                android:textColor="@color/text_color_content"
+                                android:textSize="@dimen/text_size_large" />
+
+                            <RadioButton
+                                android:id="@+id/reason_nolesson"
+                                style="@style/RadioButtonStyles"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="200dp"
+                                android:layout_marginTop="-20dp"
+                                android:layout_toRightOf="@+id/reason_late"
+                                android:background="@null"
+                                android:checked="false"
+                                android:paddingLeft="10dp"
+                                android:text="老师没来上课"
+                                android:textColor="@color/text_color_content"
+                                android:textSize="@dimen/text_size_large" />
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="20dp"
+                                android:background="#EEEEEE" />
+
+                            <RadioButton
+                                android:id="@+id/reason_changeclass"
+                                style="@style/RadioButtonStyles"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dip"
+                                android:background="@null"
+                                android:checked="false"
+                                android:paddingLeft="10dp"
+                                android:text="老师要求私下调课"
+                                android:textColor="@color/text_color_content"
+                                android:textSize="@dimen/text_size_large" />
+
+                            <RadioButton
+                                android:id="@+id/reason_other"
+                                style="@style/RadioButtonStyles"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="200dp"
+                                android:layout_marginTop="-40dp"
+                                android:layout_toRightOf="@+id/reason_changeclass"
+                                android:background="@null"
+                                android:checked="false"
+                                android:paddingLeft="10dp"
+                                android:text="其他"
+                                android:textColor="@color/text_color_content"
+                                android:textSize="@dimen/text_size_large" />
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:background="#EEEEEE"
+                                android:layout_marginTop="20dp"/>
+                            <EditText
+                                android:id="@+id/et_otherreason"
+                                android:layout_width="fill_parent"
+                                android:layout_height="86dp"
+                                android:background="@null"
+                                android:hint="@string/teacher_appraise_other_reason"
+                                android:maxLength="500"
+                                android:paddingLeft="20dp"
+                                android:textCursorDrawable="@null"
+                                android:textSize="14sp"
+                                android:visibility="gone" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="14dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="20dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/teacher_appraise_prepare_lesson"
+                                android:textColor="#494949"
+                                android:textSize="@dimen/text_size_large" />
+
+                            <com.vip.student.widget.RatingBar
+                                android:id="@+id/ratingbar_prepare_lesson"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                vip:disable_star="@mipmap/rating_normal_empty"
+                                vip:empty_star="@mipmap/rating_normal_empty"
+                                vip:full_star="@mipmap/rating_normal_full"
+                                vip:half_star="@mipmap/rating_normal_half"
+                                vip:isIndicator="false"
+                                vip:numStars="5"
+                                vip:rating="5"
+                                vip:startsPadding="6dp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/teacher_appraise_yindao"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:divider="?android:attr/listDivider"
+                        android:orientation="vertical"
+                        android:showDividers="middle"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="14dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="20dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/teacher_appraise_communicate"
+                                android:textColor="#494949"
+                                android:textSize="@dimen/text_size_large" />
+
+                            <com.vip.student.widget.RatingBar
+                                android:id="@+id/ratingbar_communicate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                vip:disable_star="@mipmap/rating_normal_empty"
+                                vip:empty_star="@mipmap/rating_normal_empty"
+                                vip:full_star="@mipmap/rating_normal_full"
+                                vip:half_star="@mipmap/rating_normal_half"
+                                vip:isIndicator="false"
+                                vip:numStars="5"
+                                vip:rating="5"
+                                vip:startsPadding="6dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="14dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="20dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/teacher_appraise_give_lesson"
+                                android:textColor="#494949"
+                                android:textSize="@dimen/text_size_large" />
+
+                            <com.vip.student.widget.RatingBar
+                                android:id="@+id/ratingbar_give_lesson"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                vip:disable_star="@mipmap/rating_normal_empty"
+                                vip:empty_star="@mipmap/rating_normal_empty"
+                                vip:full_star="@mipmap/rating_normal_full"
+                                vip:half_star="@mipmap/rating_normal_half"
+                                vip:isIndicator="false"
+                                vip:numStars="5"
+                                vip:rating="5"
+                                vip:startsPadding="6dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="20dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/teacher_appraise_message"
+                                android:textColor="#494949"
+                                android:textSize="@dimen/text_size_large" />
+
+                            <com.vip.student.widget.RatingBar
+                                android:id="@+id/ratingbar_message"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                vip:disable_star="@mipmap/rating_normal_empty"
+                                vip:empty_star="@mipmap/rating_normal_empty"
+                                vip:full_star="@mipmap/rating_normal_full"
+                                vip:half_star="@mipmap/rating_normal_half"
+                                vip:isIndicator="false"
+                                vip:numStars="5"
+                                vip:rating="5"
+                                vip:startsPadding="6dp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/teacher_appraise_suggestion"
+                    android:layout_width="fill_parent"
+                    android:layout_height="86dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_white_rounded_with_border_selector"
+                    android:hint="@string/teacher_appraise_suggestion"
+                    android:maxLength="500"
+                    android:paddingLeft="20dp"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/teacher_appraise_submit"
+                    style="@style/text_white_bg_blue_btn_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="14dp"
+                    android:text="@string/change_lesson_submit" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

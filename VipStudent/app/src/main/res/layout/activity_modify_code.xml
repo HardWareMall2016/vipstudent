@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin">
+
+    <EditText
+        android:id="@+id/modify_current_code"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/bg_white_rounded_with_border_selector"
+        android:gravity="center_vertical"
+        android:hint="@string/modify_current_code"
+        android:minHeight="@dimen/min_item_height"
+        android:paddingLeft="16dp"
+        android:singleLine="true"
+        android:textSize="16sp"
+        android:inputType="textPassword"
+        android:textCursorDrawable="@null"/>
+
+    <EditText
+        android:id="@+id/modify_new_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_white_rounded_with_border_selector"
+        android:gravity="center_vertical"
+        android:hint="@string/modify_new_password"
+        android:inputType="textPassword"
+        android:minHeight="@dimen/min_item_height"
+        android:paddingLeft="16dp"
+        android:singleLine="true"
+        android:textSize="16sp"
+        android:textCursorDrawable="@null"/>
+
+    <EditText
+        android:id="@+id/modify_again_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_white_rounded_with_border_selector"
+        android:gravity="center_vertical"
+        android:hint="@string/modify_again_password"
+        android:inputType="textPassword"
+        android:minHeight="@dimen/min_item_height"
+        android:paddingLeft="16dp"
+        android:singleLine="true"
+        android:textSize="16sp"
+        android:textCursorDrawable="@null"/>
+
+    <Button
+        android:id="@+id/btn_modify_code"
+        style="@style/text_white_bg_blue_btn_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/finish" />
+</LinearLayout>

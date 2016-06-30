@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/setting_person"
+        layout="@layout/setting_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"/>
+
+    <include
+        android:id="@+id/setting_warn"
+        layout="@layout/setting_item" />
+
+    <include
+        android:id="@+id/setting_feedback"
+        layout="@layout/setting_item" />
+
+    <include
+        android:id="@+id/setting_recommend"
+        layout="@layout/setting_item" />
+
+    <include
+        android:id="@+id/clear_cache"
+        layout="@layout/setting_item" />
+
+   <RelativeLayout
+       android:id="@+id/my_setting_quit"
+       android:layout_width="fill_parent"
+       android:background="@drawable/bg_white"
+       android:layout_marginTop="20dp"
+       android:layout_height="wrap_content"
+       android:minHeight="@dimen/min_item_height">
+
+       <TextView
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:text="@string/my_setting_quit"
+           android:textColor="#ff5252"
+           android:textSize="@dimen/text_size_large"
+           android:gravity="center"
+           android:layout_centerVertical="true"
+           />
+   </RelativeLayout>
+
+
+</LinearLayout>
